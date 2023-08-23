@@ -1,1 +1,1 @@
-Simple example for NextJS application with Styled Components
+Simple example for NextJS with Typescript, styled components, storybook and jest for testing
