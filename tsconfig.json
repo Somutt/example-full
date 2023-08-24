@@ -23,7 +23,7 @@
     "**/*.ts",
     "**/*.tsx",
     "**/*.spec.tsx"
-, "src/components/Component/component.spec.jsx"  ],
+, "src/components/Comp/component.spec.jsx"  ],
   "exclude": [
     "node_modules"
   ]
