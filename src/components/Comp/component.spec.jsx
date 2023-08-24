@@ -1,20 +1,20 @@
 import { screen } from '@storybook/testing-library';
 import { renderTheme } from '../../utils/renderTheme';
-import { Component } from '.';
+import { Comp } from '.';
 
-describe('<Component />', () => {
-  it('Should render Component correctly with title', () => {
-    renderTheme(<Component title='oi' />);
+describe('<Comp />', () => {
+  it('Should render Comp correctly with title', () => {
+    renderTheme(<Comp title='oi' />);
     const heading = screen.getByRole('heading', { name: /oi/i });
     expect(heading).toBeInTheDocument();
   });
-  it('Should render Component correctly without title', () => {
-    renderTheme(<Component />);
+  it('Should render Comp correctly without title', () => {
+    renderTheme(<Comp />);
     const heading = screen.queryByRole('heading', { name: /oi/i });
     expect(heading).not.toBeInTheDocument();
   });
   it('Should match snapshot', () => {
-    const { container } = renderTheme(<Component title='ola' />);
+    const { container } = renderTheme(<Comp title='ola' />);
     expect(container.firstChild).toMatchSnapshot();
   });
 });

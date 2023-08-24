@@ -1,11 +1,11 @@
 import * as Styled from './styles';
 
-import { Component } from '../../components/Component';
+import { Comp } from '../../components/Comp';
 
 export const Home = () => {
   return (
     <Styled.Wrapper>
-      <Component title='Ola mundo!'></Component>
+      <Comp title='Ola mundo!' />
     </Styled.Wrapper>
   );
 };

@@ -4,7 +4,7 @@ export type CompProps = {
   title?: string;
 };
 
-export const Component = ({ title = 'teste' }: CompProps) => {
+export const Comp = ({ title = 'teste' }: CompProps) => {
   return (
     <Styled.Wrapper>
       <h1>{title}</h1>

@@ -1,9 +1,9 @@
 import { Meta, StoryFn } from '@storybook/react';
-import { Component, CompProps } from '.';
+import { Comp, CompProps } from '.';
 
 export default {
-  title: 'Component',
-  component: Component,
+  title: 'Comp',
+  component: Comp,
   args: {
     title: 'Ola Mundo!',
   },
@@ -12,7 +12,7 @@ export default {
 export const Template: StoryFn<CompProps> = (args) => {
   return (
     <div>
-      <Component {...args} />
+      <Comp {...args} />
     </div>
   );
 };
